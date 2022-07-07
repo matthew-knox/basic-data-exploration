@@ -5,7 +5,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
 # Load the data, and separate the target
-iowa_file_path = '../input/train.csv'
+iowa_file_path = '../input/housing-prices-competition/train.csv'
 home_data = pd.read_csv(iowa_file_path)
 y = home_data.SalePrice
 
@@ -21,7 +21,7 @@ features = [
     'OverallQual',
     'OverallCond',
     'Fireplaces',
-    'PoolArea',
+    'PoolArea'
             ]
 
 # Select columns corresponding to features, and preview the data
@@ -46,7 +46,7 @@ rf_model_on_full_data = RandomForestRegressor(random_state=1)
 rf_model_on_full_data.fit(X, y)
 
 # path to file you will use for predictions
-test_data_path = '../input/test.csv'
+test_data_path = '../input/housing-prices-competition/test.csv'
 
 # read test data file using pandas
 test_data = pd.read_csv(test_data_path)
