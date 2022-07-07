@@ -1,2 +1,3 @@
-# basic-data-exploration
-basic data exploration course from Kaggle
+# Kaggle Machine Learning Courses Repo
+Repo for code gathered from the Kaggle Machine Learning courses
+
